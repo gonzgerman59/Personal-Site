@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bruin Board UCLA</title>
+    <link href="./personalsite.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <h1>Bruin Board</h1>
+    </main>
+    <nav>
+      <li>
+        <a href="history.html">History of the Program</a>
+      </li>
+
+      <li>
+        <a href="./lovebruin.html">Current Bruin News</a>
+      </li>
+    </nav>
+    <div class="lasvegas">
+      <h2>Days till we play in Vegas</h2>
+      <a
+        class="tickets"
+        href="https://allegiantstadium.ticketsoffice.org/tickets/5119962/las-vegas-bowl-tickets-sat-dec-17-2022-allegiant-stadium"
+        >Get Your Tickets here</a
+      >
+      <p id="demo"></p>
+
+      <script>
+        var countDownDate = new Date("Dec 30, 2022 15:37:25").getTime();
+
+        var x = setInterval(function () {
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("demo").innerHTML =
+            days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML =
+              "The Las Vegas Bowl is happening";
+          }
+        }, 1000);
+      </script>
+    </div>
+    <span id="vidl">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/NIwdBmQGnZ4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </span>
+    <span id="vidr">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/HzXsNsctaV4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </span>
+    <div>
+      <p>
+        UCLA persevered through a shaky 35-28 victory over California on Friday
+        at Memorial Stadium to avoid a full-scale implosion and allow the
+        18th-ranked Bruins to exhale deeply before starting bowl-game
+        preparations. A robust run game and two fumble recoveries prevented the
+        Bruins (9-3 overall, 6-3 Pac-12) from absorbing what would have been a
+        third consecutive loss to end the regular season.
+      </p>
+    </div>
+
+    <div class="p">
+      <p>
+        We here at the Bruin board want this to be your one stop shop for all
+        things UCLA Football. Since the major rule change on Name, Image, and
+        Likeness we want to get ahead of the game. If you want to join the
+        movement to get the best players to UCLA please click on this Link.
+        <a
+          href="https://uclabruins.com/sports/2021/8/18/ucla-westwood-ascent-nil.aspx"
+          >Official UCLA Collective</a
+        >
+      </p>
+    </div>
+
+    <div>
+      <img class="bobo" src="./bobonew.jpg" alt="image for homepage" />
+    </div>
+    <div>
+      <img class="brett" src="./brett.jpg" alt="imgage for homepage" />
+    </div>
+    <div>
+      <article>
+        <textarea name="text" cols="55" rows="35">
+Add what you want others to know about the Bruins...
+        </textarea>
+      </article>
+    </div>
+
+    <footer>
+      <a href="https://247sports.com/college/ucla/"
+        >Link to 247sports Services</a
+      >
+      <a href="https://uclabruins.com/sports/football/roster"
+        >Link to the Current UCLA Football Roster</a
+      >
+    </footer>
+  </body>
+</html>
